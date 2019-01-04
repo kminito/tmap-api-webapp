@@ -1,18 +1,22 @@
-function findPath2(){
-
+function findpath(){
 
     // 지도 삽입 전 map div 초기화
     initMap()
-
-
 
     var map = new Tmap.Map({
          div:'map',  // 결과 지도를 표시할 곳
          height: "500px"
      });
 
-     var prtcl;
-     var headers = {};
+
+    
+    
+
+
+
+
+    var prtcl;
+    var headers = {};
 
      headers["appKey"]=authKey; // 발급받은 인증키를 넣어야 한다
      $.ajax({
@@ -61,8 +65,25 @@ function findPath2(){
 
              map.addLayer(routeLayer); // 지도에 백터 레이어 추가
 
-             // 경로탐색 결과 반경만큼 지도 레벨 조정
-             map.zoomToExtent(routeLayer.getDataExtent());
+
+             if(passList){
+				// 경유지 심볼 찍기
+                markerWaypointLayer = new Tmap.Layer.Markers("waypoint");
+                map.addLayer(markerWaypointLayer);
+            
+                var size = new Tmap.Size(24, 38);
+                var offset = new Tmap.Pixel(-(size.w / 2), -size.h); 
+                var icon = new Tmap.IconHtml("<img src='http://tmapapis.sktelecom.com/upload/tmap/marker/pin_b_m_p.png' />", size, offset);
+                var marker = new Tmap.Marker(new Tmap.LonLat(String(wayX),String(wayY)).transform("EPSG:4326", "EPSG:3857"), icon);
+        
+                markerWaypointLayer.addMarker(marker);
+
+
+             }
+            // 경로탐색 결과 반경만큼 지도 레벨 조정
+            map.zoomToExtent(routeLayer.getDataExtent());
+
+
          },
          error:function(request,status,error){ // API가 제대로 작동하지 않을 경우
          console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
