@@ -10,10 +10,7 @@ var wayName;
 var wayX;
 var wayY;
 
-//
 var passList = null;
-
-var timeOffset = 1; // 특정 시간 후의 경로 탐색
 
 var departureTime;
 
@@ -63,10 +60,8 @@ var renderButtons = function() {
 
 // 경로탐색 전 MAP div 초기화 -> 고양이 사진 삭제 및 투명도 0% 설정
 var initMap = function() {
-
-  document.querySelector(".main__map").classList.remove(".main__map-empty") //강아지 배경 삭제 (클래스 토글)
+  document.querySelector(".main__map").classList.remove(".main__map-empty"); //강아지 배경 삭제 (클래스 토글)
   document.querySelector("#map").innerHTML = ""; //기존 지도 삭제
-
 };
 
 document.getElementById("button1").onclick = function() {

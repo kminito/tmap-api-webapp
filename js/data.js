@@ -3,6 +3,8 @@ var authKey = "4b65ed0f-8a23-4128-abf7-7df859e62126";
 var route1 = ["workplace", "home", "samsan"];
 var route2 = ["workplace", "ktxstation", "samsan"];
 
+var timeOffset = 1; // 특정 시간 후의 경로 탐색 (1시간 후)
+
 var places = {
   workplace: {
     name: "회사",
