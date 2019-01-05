@@ -63,9 +63,10 @@ var renderButtons = function() {
 
 // 경로탐색 전 MAP div 초기화 -> 고양이 사진 삭제 및 투명도 0% 설정
 var initMap = function() {
-  document.querySelector("#map").innerHTML = "";
-  document.querySelector("#map").style.backgroundImage = "";
-  document.querySelector("#map").style.opacity = 1;
+
+  document.querySelector(".main__map").classList.remove(".main__map-empty") //강아지 배경 삭제 (클래스 토글)
+  document.querySelector("#map").innerHTML = ""; //기존 지도 삭제
+
 };
 
 document.getElementById("button1").onclick = function() {
@@ -106,8 +107,3 @@ document.getElementById("button2").onclick = function() {
 };
 
 renderButtons();
-document.querySelector("#map").style.backgroundImage =
-  "url('images/bg-puppy.jpg')";
-document.querySelector("#map").style.backgroundSize =
-  "100vm"
-document.querySelector("#map").style.opacity = 0.7;

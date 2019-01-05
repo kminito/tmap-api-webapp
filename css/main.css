@@ -12,3 +12,13 @@
 .main .main__map {
   height: 500px;
 }
+
+.main__map-empty {
+  background-image: url('../images/bg-puppy.jpg');
+  opacity : 0.7;
+  background-size: 100vm;
+  background-repeat: no-repeat;
+}
+
+
+
