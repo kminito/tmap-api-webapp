@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>tmap API</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="option-bar">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="option-bar">
         <div class="option-bar__column">
-            <button class="option-bar__column__button" id="button1"></button>
+          <button class="option-bar__column__button" id="button1"></button>
         </div>
         <div class="option-bar__column">
-            <button class="option-bar__column__button" id="button2"></button>
+          <button class="option-bar__column__button" id="button2"></button>
         </div>
         <div class="option-bar__column">
-            <div class="option-bar__column__checkbox">
-                <p><input type="checkbox" name="checkbox1" id="checkbox1"><label for="checkbox1">1시간 후</label>
-                    <br>
-                <input type="checkbox" name="checkbox2" id="checkbox2" value=true><label for="checkbox2">경유지 포함</label>
-            </div>
+          <div class="option-bar__column__checkbox">
+            <p>
+              <input type="checkbox" name="checkbox1" id="checkbox1" /><label
+                for="checkbox1"
+                >1시간 후</label
+              >
+              <br />
+              <input
+                type="checkbox"
+                name="checkbox2"
+                id="checkbox2"
+                value="true"
+              /><label for="checkbox2">경유지 포함</label>
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="main">
+      <div class="main">
         <div class="main__header">
-            <span class="main__header__result">
-            </span>
+          <span class="main__header__result"> </span>
         </div>
-        <div class="main__map" id="map">
-        </div>
+        <div class="main__map" id="map"></div>
+      </div>
     </div>
-
 
     <script src="js/data.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -40,7 +49,5 @@
     <script src="js/whentogo.js"></script>
     <script src="js/findpath.js"></script>
     <script src="js/logic.js"></script>
-</body>
+  </body>
 </html>
-
-

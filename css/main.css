@@ -1,13 +1,14 @@
 .main {
-
-    height: 530px;
-    padding-top : 100px;
+  width: 100vw;
+  max-width: 600px;
+  height: 530px;
+  padding-top: 100px;
 }
 
 .main .main__header {
-    height :30px;
+  height: 30px;
 }
 
 .main .main__map {
-    height: 500px;
+  height: 500px;
 }

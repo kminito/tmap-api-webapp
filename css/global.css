@@ -1,11 +1,6 @@
 body {
-    /* font-family: 'Open Sans', sans-serif; */
-    padding-top:60px;
+  padding-top: 60px;
+  max-width: 600px;
 
-    margin:auto;
-
-    border: 1px gray solid;
-
-    width : 600px;
+  border: 1px gray solid;
 }
-
