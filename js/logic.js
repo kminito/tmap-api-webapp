@@ -108,4 +108,6 @@ document.getElementById("button2").onclick = function() {
 renderButtons();
 document.querySelector("#map").style.backgroundImage =
   "url('images/bg-puppy.jpg')";
+document.querySelector("#map").style.backgroundSize =
+  "100vm"
 document.querySelector("#map").style.opacity = 0.7;
