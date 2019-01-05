@@ -14,11 +14,8 @@
 }
 
 .main__map-empty {
-  background-image: url('../images/bg-puppy.jpg');
-  opacity : 0.7;
-  background-size: 100vm;
+  background: url("../images/bg-puppy.jpg");
+  opacity: 0.7;
+  background-size: contain;
   background-repeat: no-repeat;
 }
-
-
-
