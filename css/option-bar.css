@@ -22,10 +22,10 @@
 
 .option-bar .option-bar__column .option-bar__column__checkbox {
   position: relative;
-  bottom: 0.5em;
-  padding-left: 20px;
+  bottom: 0.7vw;
+  padding-left: 1.5vw;
   text-align: left;
-  margin-top: 15px;
+  margin-top: 1.5vw;
 }
 
 button {
@@ -39,5 +39,5 @@ input[type="checkbox"] {
   width: 3vw;
   height: 3vw;
   position: relative;
-  top: 0.5em;
+  top: 0.9vw;
 }
