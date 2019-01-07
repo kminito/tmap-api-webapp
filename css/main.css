@@ -4,10 +4,13 @@
   width: 100vw;
   max-width: 600px;
   height: 530px;
+  border: 1px gray solid;
 }
 
 .main .main__header {
   height: 30px;
+  margin-left:10px;
+  padding-top:4px;
 }
 
 .main .main__map {  /* border: 1px gray solid; */
