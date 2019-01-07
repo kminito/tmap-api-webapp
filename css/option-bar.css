@@ -8,21 +8,19 @@
   display: flex;
   justify-content: space-between;
 }
+
 .option-bar .option-bar__column {
   width: 100%;
   align-content: center;
   text-align: center;
   vertical-align: middle;
   flex: 1 1 auto;
-}
-
-.option-bar .option-bar__column:nth-child(3) {
-  border-bottom: 1px gray solid;
+  border: 1px gray solid;
 }
 
 .option-bar .option-bar__column .option-bar__column__checkbox {
-  position: relative;
-  top: 16px;
+  position: absolute;
+  top: 15px;
   padding-left: 0.7em;
   text-align: left;
 }
@@ -32,6 +30,7 @@ button {
   height: 100%;
   font-size: 1.1em;
   background-color: #f7f7f7;
+  border : none;
 }
 
 input[type="checkbox"] {

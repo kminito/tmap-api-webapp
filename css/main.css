@@ -1,15 +1,16 @@
 .main {
+  position :absolute;
+  top:100px;
   width: 100vw;
   max-width: 600px;
   height: 530px;
-  padding-top: 100px;
 }
 
 .main .main__header {
   height: 30px;
 }
 
-.main .main__map {
+.main .main__map {  /* border: 1px gray solid; */
   height: 500px;
 }
 
