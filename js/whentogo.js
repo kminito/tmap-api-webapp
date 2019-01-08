@@ -48,12 +48,12 @@ function whentogo() {
     routesInfo: {
       //길 안내 요청 정보 입니다.
       departure: {
-        name: startName,
+        name: "출발지",
         lon: startX,
         lat: startY
       },
       destination: {
-        name: endName,
+        name: "도착지",
         lon: endX,
         lat: endY
       },
@@ -111,7 +111,7 @@ function whentogo() {
           $intRate[0].getElementsByTagName("tmap:totalTime")[0].childNodes[0]
             .nodeValue / 60
         ).toFixed(0) +
-        "분,";
+        "분";
 
       document.querySelector(".main__header__result").innerText =
         tDistance + tTime;
