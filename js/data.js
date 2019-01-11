@@ -1,7 +1,7 @@
 var authKey = "4b65ed0f-8a23-4128-abf7-7df859e62126";
 
-var route1 = ["workplace", "home", "samsan"];
-var route2 = ["workplace", "ktxstation", "samsan"];
+var route1 = ["leaders", "gokban", "mangpo"];
+var route2 = ["leaders", "sanbon", "dongsuwon"];
 
 var timeOffset = 1; // 특정 시간 후의 경로 탐색 (1시간 후)
 
@@ -40,5 +40,15 @@ var places = {
     name: "리더스타워",
     locX: 127.104997,
     locY: 37.2208
+  },
+  mangpo:{
+    name: "망포역",
+    locX: 127.056255,
+    locY: 37.245908
+  },
+  dongsuwon:{
+    name: "동수원IC",
+    locX: 127.049671,
+    locY: 37.300151
   }
 };
